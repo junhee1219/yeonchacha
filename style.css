@@ -1,0 +1,136 @@
+
+/* 기본 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#addRedArea, #dateArea {
+    margin-bottom: 15px;
+}
+
+
+#restArea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#restArea span {
+    margin-right: 10px;
+}
+
+#ramainTakeOff {
+    flex: 1; /* 가능한 모든 공간을 차지하도록 설정 */
+}
+
+
+#addRedArea {
+    display: flex;
+    align-items: center;
+}
+
+#yearInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 20%; 
+    margin-right: 10px;
+}
+
+#addRedDay {
+    flex: 1; /* 가능한 모든 공간을 차지하도록 설정 */
+    margin-right: 10px;
+}
+
+input, button, table {
+    width: 100%;
+}
+
+
+
+
+input[type="date"], #addRedDay, #ramainTakeOff {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: calc(80% - 10px); /* 버튼 크기 고려 */
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #e71616;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 30%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc559e;
+}
+
+span {
+    margin: 0 5px;
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 달력 스타일 */
+/* Table styling */
+#calender {
+    width: 80%; /* Adjust this width as needed */
+    margin: 20px auto; /* Center the calendar horizontally */
+    background-color: white;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#calender th, #calender td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+#calender th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+
+#day0, #day6 {
+    color: #ff4d4d; /* 주말 색상 강조 */
+}
+.red{
+    color: #ff4d4d; /* 주말 색상 강조 */
+}
+.blue{
+    color: #2845e9; /* 주말 색상 강조 */
+}
+
+#div1, #div2{
+    margin-bottom: 15px;
+}
+
+#console {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+  }
